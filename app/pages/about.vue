@@ -6,7 +6,11 @@
         <button @click="enableCustomLayout">Update layout</button>
     </div>
 </template>
+
 <script setup lang="ts">
+useHead({
+    title: 'About'
+})
 
 function enableCustomLayout() {
     setPageLayout('another')
